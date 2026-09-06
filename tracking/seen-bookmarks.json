@@ -6,8 +6,20 @@
       "url": "https://x.com/huoshan007/status/2096041501117829150",
       "repo": "https://github.com/unclecode/crawl4ai",
       "slug": "crawl4ai-md",
-      "date": "2026-09-07"
+      "date": "2026-09-07",
+      "status": "built"
     }
   ],
-  "built": []
+  "built": [
+    {
+      "id": "2096041501117829150",
+      "title": "Crawl4AI",
+      "url": "https://x.com/huoshan007/status/2096041501117829150",
+      "repo": "https://github.com/unclecode/crawl4ai",
+      "slug": "crawl4ai-md",
+      "date": "2026-09-07",
+      "builtDate": "2026-09-07",
+      "pr": "https://github.com/larryfang/tech-demos/pull/1"
+    }
+  ]
 }
