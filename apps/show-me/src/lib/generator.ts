@@ -85,13 +85,18 @@ function deriveTitle(lines: Line[], fallback: string): string {
 // ---------------------------------------------------------------------------
 // mermaid flow
 
-function sanitizeLabel(s: string): string {
-  return s.replace(/"/g, "'").replace(/[[\]{}()<>#;]/g, "").trim()
+function shorten(s: string, max = 42): string {
+  const c = s.trim()
+  return c.length <= max ? c : c.slice(0, max - 1).trimEnd() + "…"
 }
 
-function shorten(s: string, max = 42): string {
-  const c = sanitizeLabel(s)
-  return c.length <= max ? c : c.slice(0, max - 1).trimEnd() + "…"
+/**
+ * Mermaid html-escapes quotes/apostrophes in labels, which inflates its text
+ * measurement and clips the rendered label mid-word — so drop them entirely,
+ * along with mermaid's structural characters.
+ */
+function mermaidLabel(s: string, max = 42): string {
+  return shorten(s.replace(/["'’]/g, "").replace(/[[\]{}()<>#;&|]/g, " ").replace(/\s+/g, " "), max)
 }
 
 interface FlowResult {
@@ -112,15 +117,15 @@ function buildFlow(lines: Line[]): FlowResult | null {
       const m = l.text.match(/^([\w .]+?) *(?:->|→|=>) *([\w .]+?) *: *(.+)$/)
       if (!m) continue
       const [, from, to, msg] = m
-      const a = shorten(from, 20).replace(/\s+/g, "_")
-      const b = shorten(to, 20).replace(/\s+/g, "_")
+      const a = mermaidLabel(from, 20).replace(/\s+/g, "_")
+      const b = mermaidLabel(to, 20).replace(/\s+/g, "_")
       for (const p of [a, b]) {
         if (!seen.has(p)) {
           seen.add(p)
           stmts.push(`    participant ${p}`)
         }
       }
-      stmts.push(`    ${a}->>${b}: ${shorten(msg, 40)}`)
+      stmts.push(`    ${a}->>${b}: ${mermaidLabel(msg, 40)}`)
     }
     return {
       source: `sequenceDiagram\n${stmts.join("\n")}`,
@@ -146,7 +151,7 @@ function buildFlow(lines: Line[]): FlowResult | null {
   const uniq = steps.filter((s, i) => steps.indexOf(s) === i)
   if (uniq.length < 2) return null
 
-  const nodes = uniq.map((s, i) => `    S${i}["${shorten(s)}"]`)
+  const nodes = uniq.map((s, i) => `    S${i}["${mermaidLabel(s)}"]`)
   const edges = uniq.slice(1).map((_, i) => `    S${i} --> S${i + 1}`)
   return {
     source: `flowchart TD\n${nodes.join("\n")}\n${edges.join("\n")}`,
@@ -303,7 +308,7 @@ export function generate(input: string, mode: Mode): Visual {
     // no sequence signal: still draw something honest — a linear chain of lines
     const steps = lines.slice(1, 7).map((l) => l.text)
     if (steps.length >= 2) {
-      const nodes = steps.map((s, i) => `    S${i}["${shorten(s)}"]`)
+      const nodes = steps.map((s, i) => `    S${i}["${mermaidLabel(s)}"]`)
       const edges = steps.slice(1).map((_, i) => `    S${i} --> S${i + 1}`)
       return makeMermaid(
         {

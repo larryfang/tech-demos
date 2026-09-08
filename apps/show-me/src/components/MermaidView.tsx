@@ -4,9 +4,13 @@ import mermaid from "mermaid"
 mermaid.initialize({
   startOnLoad: false,
   theme: "neutral",
-  fontFamily: "ui-sans-serif, system-ui, sans-serif",
-  // svg text labels measure reliably; html labels clip inside node boxes
-  flowchart: { htmlLabels: false },
+  // concrete font so mermaid's text measurement matches the rendered SVG
+  fontFamily: "Arial, Helvetica, sans-serif",
+  // top-level htmlLabels (v11 ignores flowchart.htmlLabels) forces pure SVG
+  // tspan labels: foreignObject HTML labels don't scale with the SVG and
+  // get clipped at node edges
+  htmlLabels: false,
+  flowchart: { htmlLabels: false, wrappingWidth: 180, padding: 12 },
 })
 
 let renderSeq = 0
