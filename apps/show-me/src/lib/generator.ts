@@ -26,8 +26,7 @@ export interface Visual {
 // ---------------------------------------------------------------------------
 // cleanup
 
-const NOISE_RE =
-  /^(RT\s|@\w+[:,]?\s*$|https?:\/\/\S+$|[\d:apm\s/-]+(AM|PM)$|\d+ (likes?|reposts?|replies|views).*$)/i
+const NOISE_RE = /^\d[\d,.]* ?(likes?|reposts?|replies|views|retweets?)\b/i
 
 interface Line {
   raw: string
@@ -39,6 +38,9 @@ interface Line {
 function stripInline(s: string): string {
   return s
     .replace(/https?:\/\/\S+/g, "")
+    .replace(/^RT\s+/i, "")
+    .replace(/^(@\w+[:,]?\s*)+/, "")
+    .replace(/\b\d{1,2}:\d{2}\s*(AM|PM)?\b/gi, "")
     .replace(/[“”]/g, '"')
     .replace(/\s+/g, " ")
     .trim()

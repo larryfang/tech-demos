@@ -5,6 +5,8 @@ mermaid.initialize({
   startOnLoad: false,
   theme: "neutral",
   fontFamily: "ui-sans-serif, system-ui, sans-serif",
+  // svg text labels measure reliably; html labels clip inside node boxes
+  flowchart: { htmlLabels: false },
 })
 
 let renderSeq = 0
