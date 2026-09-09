@@ -23,7 +23,8 @@
       "url": "https://x.com/Morry4AI/status/2096181438756581715",
       "repo": "https://github.com/humanlayer/skills",
       "slug": "show-me",
-      "date": "2026-09-09"
+      "date": "2026-09-09",
+      "status": "built"
     }
   ],
   "built": [
@@ -36,6 +37,16 @@
       "date": "2026-09-07",
       "builtDate": "2026-09-07",
       "pr": "https://github.com/larryfang/tech-demos/pull/1"
+    },
+    {
+      "id": "2096181438756581715",
+      "title": "show-me",
+      "url": "https://x.com/Morry4AI/status/2096181438756581715",
+      "repo": "https://github.com/humanlayer/skills",
+      "slug": "show-me",
+      "date": "2026-09-09",
+      "builtDate": "2026-09-09",
+      "pr": "https://github.com/larryfang/tech-demos/pull/3"
     }
   ]
 }
