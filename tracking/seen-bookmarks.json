@@ -19,11 +19,11 @@
     },
     {
       "id": "2096181438756581715",
-      "title": "HumanLayer show-me skill",
+      "title": "show-me",
       "url": "https://x.com/Morry4AI/status/2096181438756581715",
       "repo": "https://github.com/humanlayer/skills",
       "slug": "show-me",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "status": "built"
     }
   ],
@@ -40,12 +40,13 @@
     },
     {
       "id": "2096181438756581715",
-      "title": "HumanLayer show-me skill",
+      "title": "show-me",
       "url": "https://x.com/Morry4AI/status/2096181438756581715",
       "repo": "https://github.com/humanlayer/skills",
       "slug": "show-me",
-      "date": "2026-09-08",
-      "builtDate": "2026-09-08"
+      "date": "2026-09-09",
+      "builtDate": "2026-09-09",
+      "pr": "https://github.com/larryfang/tech-demos/pull/3"
     }
   ]
 }
