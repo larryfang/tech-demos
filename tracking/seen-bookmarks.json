@@ -25,6 +25,14 @@
       "slug": "show-me",
       "date": "2026-09-09",
       "status": "built"
+    },
+    {
+      "id": "2097610542127223251",
+      "title": "Memmy",
+      "url": "https://x.com/Astronaut_1216/status/2097610542127223251",
+      "repo": "https://github.com/MemTensor/memmy-agent",
+      "slug": "memmy-hub",
+      "date": "2026-09-10"
     }
   ],
   "built": [
