@@ -15,7 +15,8 @@
       "url": "https://x.com/rudrank/status/2096595527085555965",
       "repo": "https://github.com/rorkai/App-Store-Connect-CLI",
       "slug": "asc-ops",
-      "date": "2026-09-08"
+      "date": "2026-09-08",
+      "status": "built"
     },
     {
       "id": "2096181438756581715",
@@ -63,6 +64,15 @@
       "date": "2026-09-09",
       "builtDate": "2026-09-09",
       "pr": "https://github.com/larryfang/tech-demos/pull/3"
+    },
+    {
+      "id": "2096595527085555965",
+      "title": "App Store Connect CLI",
+      "url": "https://x.com/rudrank/status/2096595527085555965",
+      "repo": "https://github.com/rorkai/App-Store-Connect-CLI",
+      "slug": "asc-ops",
+      "date": "2026-09-08",
+      "builtDate": "2026-09-13"
     }
   ]
 }
