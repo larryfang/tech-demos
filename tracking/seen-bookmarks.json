@@ -51,6 +51,14 @@
       "slug": "dialbot-console",
       "date": "2026-09-14",
       "status": "built"
+    },
+    {
+      "id": "2094749355249160523",
+      "title": "Lieflat Charts",
+      "url": "https://x.com/Zhiyu333/status/2094749355249160523",
+      "repo": "https://github.com/larashero3-dotcom/lieflat-charts",
+      "slug": "lieflat-charts",
+      "date": "2026-09-15"
     }
   ],
   "built": [
