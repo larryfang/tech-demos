@@ -49,7 +49,8 @@
       "url": "https://x.com/mattyp/status/2098155792327381294",
       "repo": "https://docs.bland.ai",
       "slug": "dialbot-console",
-      "date": "2026-09-14"
+      "date": "2026-09-14",
+      "status": "built"
     }
   ],
   "built": [
@@ -82,6 +83,15 @@
       "date": "2026-09-08",
       "builtDate": "2026-09-13",
       "pr": "https://github.com/larryfang/tech-demos/pull/4"
+    },
+    {
+      "id": "2098155792327381294",
+      "title": "Dialbot (Bland voice)",
+      "url": "https://x.com/mattyp/status/2098155792327381294",
+      "repo": "https://docs.bland.ai",
+      "slug": "dialbot-console",
+      "date": "2026-09-14",
+      "builtDate": "2026-09-14"
     }
   ]
 }
