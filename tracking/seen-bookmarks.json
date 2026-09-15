@@ -58,7 +58,8 @@
       "url": "https://x.com/Zhiyu333/status/2094749355249160523",
       "repo": "https://github.com/larashero3-dotcom/lieflat-charts",
       "slug": "lieflat-charts",
-      "date": "2026-09-15"
+      "date": "2026-09-15",
+      "status": "built"
     }
   ],
   "built": [
@@ -101,6 +102,15 @@
       "date": "2026-09-14",
       "builtDate": "2026-09-14",
       "pr": "https://github.com/larryfang/tech-demos/pull/5"
+    },
+    {
+      "id": "2094749355249160523",
+      "title": "Lieflat Charts",
+      "url": "https://x.com/Zhiyu333/status/2094749355249160523",
+      "repo": "https://github.com/larashero3-dotcom/lieflat-charts",
+      "slug": "lieflat-charts",
+      "date": "2026-09-15",
+      "builtDate": "2026-09-15"
     }
   ]
 }
