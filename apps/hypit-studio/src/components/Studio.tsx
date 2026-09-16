@@ -71,7 +71,7 @@ export function Studio() {
                       onClick={() => selectClone(item.id)}
                       className={`rounded-xl border px-3 py-3 text-left transition-colors ${
                         selected
-                          ? "border-foreground bg-muted"
+                          ? "border-foreground bg-muted ring-1 ring-foreground"
                           : "border-border hover:bg-muted/50"
                       }`}
                     >
@@ -172,7 +172,7 @@ export function Studio() {
                           onClick={() => setAnchorId(anchor.id)}
                           className={`w-full rounded-lg border px-3 py-2 text-left transition-colors ${
                             selected
-                              ? "border-foreground bg-muted"
+                              ? "border-foreground bg-muted ring-1 ring-foreground"
                               : "border-border hover:bg-muted/50"
                           }`}
                         >
