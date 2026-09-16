@@ -67,7 +67,8 @@
       "url": "https://x.com/AlchainHust/status/2099730914792079743",
       "repo": "https://github.com/alchaincyf/huashu-report",
       "slug": "huashu-report",
-      "date": "2026-09-16"
+      "date": "2026-09-16",
+      "status": "built"
     }
   ],
   "built": [
@@ -120,6 +121,16 @@
       "date": "2026-09-15",
       "builtDate": "2026-09-15",
       "pr": "https://github.com/larryfang/tech-demos/pull/6"
+    },
+    {
+      "id": "2099730914792079743",
+      "title": "Huashu-Report",
+      "url": "https://x.com/AlchainHust/status/2099730914792079743",
+      "repo": "https://github.com/alchaincyf/huashu-report",
+      "slug": "huashu-report",
+      "date": "2026-09-16",
+      "builtDate": "2026-09-16",
+      "pr": "https://github.com/larryfang/tech-demos/pull/7"
     }
   ]
 }
