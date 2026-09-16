@@ -69,6 +69,15 @@
       "slug": "huashu-report",
       "date": "2026-09-16",
       "status": "built"
+    },
+    {
+      "id": "2099652325887652016",
+      "title": "Hypit",
+      "url": "https://x.com/LufzzLiz/status/2099652325887652016",
+      "repo": "https://github.com/hypit-ai/hypit",
+      "slug": "hypit-studio",
+      "date": "2026-09-17",
+      "relatedIds": ["2100070815874285734"]
     }
   ],
   "built": [
