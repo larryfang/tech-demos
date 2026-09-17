@@ -273,7 +273,7 @@ export function Studio() {
                 <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
                   {track}
                 </span>
-                <div className="relative h-8 overflow-hidden rounded-md bg-muted">
+                <div className="relative h-7 overflow-hidden rounded-md bg-muted">
                   {WORKBENCH.filter((clip) => clip.track === track).map((clip) => {
                     const left = (clip.from / WORKBENCH_TOTAL_FRAMES) * 100
                     const width = (clip.frames / WORKBENCH_TOTAL_FRAMES) * 100
@@ -283,20 +283,26 @@ export function Studio() {
                         key={clip.id}
                         type="button"
                         title={clip.label}
+                        aria-label={clip.label}
                         onClick={() => {
                           const beat = STORYBOARD.find((item) => item.id === clip.beatId)
                           if (beat) selectShot(beat.shotId, beat)
                         }}
                         className={cn(
-                          "absolute top-1 bottom-1 truncate rounded px-1 text-[10px] leading-6",
+                          "absolute top-1 bottom-1 rounded-sm",
                           selected
-                            ? "bg-foreground text-background"
-                            : "bg-background/80 text-foreground ring-1 ring-foreground/10",
+                            ? "bg-foreground"
+                            : track === "shot"
+                              ? "bg-foreground/35"
+                              : track === "caption"
+                                ? "bg-foreground/20"
+                                : "bg-foreground/50",
                         )}
-                        style={{ left: `${left}%`, width: `${Math.max(width, 3.5)}%` }}
-                      >
-                        {clip.label}
-                      </button>
+                        style={{
+                          left: `${left}%`,
+                          width: `${Math.max(width, track === "sfx" ? 1.2 : 2.4)}%`,
+                        }}
+                      />
                     )
                   })}
                 </div>
