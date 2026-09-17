@@ -79,6 +79,14 @@
       "date": "2026-09-17",
       "status": "built",
       "relatedIds": ["2100070815874285734"]
+    },
+    {
+      "id": "2090248229648826426",
+      "title": "Video Shotcraft",
+      "url": "https://x.com/yanliudreamer/status/2090248229648826426",
+      "repo": "https://github.com/Vincentwei1021/video-shotcraft",
+      "slug": "video-shotcraft",
+      "date": "2026-09-18"
     }
   ],
   "built": [
