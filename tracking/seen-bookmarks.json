@@ -88,6 +88,15 @@
       "slug": "video-shotcraft",
       "date": "2026-09-18",
       "status": "built"
+    },
+    {
+      "id": "2101433560796467348",
+      "title": "Jev (TypeSafe System One)",
+      "url": "https://x.com/0xCodila/status/2101433560796467348",
+      "repo": "https://github.com/typesafe-ai/typesafe-sdk-js",
+      "slug": "jev-lab",
+      "date": "2026-09-21",
+      "relatedIds": ["2100984487802708306"]
     }
   ],
   "built": [
