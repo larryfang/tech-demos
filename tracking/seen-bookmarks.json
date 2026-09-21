@@ -97,6 +97,14 @@
       "slug": "jev-lab",
       "date": "2026-09-21",
       "relatedIds": ["2100984487802708306"]
+    },
+    {
+      "id": "2095952693500297537",
+      "title": "PromptLens",
+      "url": "https://x.com/binghe/status/2095952693500297537",
+      "repo": "https://github.com/binghe1980/PromptLens",
+      "slug": "promptlens-lab",
+      "date": "2026-09-22"
     }
   ],
   "built": [
