@@ -104,7 +104,8 @@
       "url": "https://x.com/binghe/status/2095952693500297537",
       "repo": "https://github.com/binghe1980/PromptLens",
       "slug": "promptlens-lab",
-      "date": "2026-09-22"
+      "date": "2026-09-22",
+      "status": "built"
     }
   ],
   "built": [
@@ -188,6 +189,16 @@
       "date": "2026-09-18",
       "builtDate": "2026-09-18",
       "pr": "https://github.com/larryfang/tech-demos/pull/9"
+    },
+    {
+      "id": "2095952693500297537",
+      "title": "PromptLens",
+      "url": "https://x.com/binghe/status/2095952693500297537",
+      "repo": "https://github.com/binghe1980/PromptLens",
+      "slug": "promptlens-lab",
+      "date": "2026-09-22",
+      "builtDate": "2026-09-22",
+      "pr": "https://github.com/larryfang/tech-demos/pull/10"
     }
   ]
 }
