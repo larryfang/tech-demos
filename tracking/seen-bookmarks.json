@@ -224,7 +224,8 @@
       "repo": "https://github.com/joeseesun/qiaomu-clipper",
       "slug": "qiaomu-reader",
       "date": "2026-10-05",
-      "builtDate": "2026-10-05"
+      "builtDate": "2026-10-05",
+      "pr": "https://github.com/larryfang/tech-demos/pull/11"
     }
   ]
 }

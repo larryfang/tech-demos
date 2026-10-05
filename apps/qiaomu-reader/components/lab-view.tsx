@@ -301,7 +301,7 @@ export function LabView({ liveAvailable: initialLive }: { liveAvailable: boolean
                 <Button type="button" onClick={() => setPlaying((value) => !value)}>
                   {playing ? "Pause" : "Play"}
                 </Button>
-                <p className="w-24 font-mono text-sm tabular-nums">
+                <p className="min-w-[7.5rem] font-mono text-sm whitespace-nowrap tabular-nums">
                   {formatTimestamp(time)} / {formatTimestamp(talk.duration)}
                 </p>
               </div>
