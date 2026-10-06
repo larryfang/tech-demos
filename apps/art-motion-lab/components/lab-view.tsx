@@ -440,7 +440,7 @@ export function LabView({ liveAvailable: initialLive }: { liveAvailable: boolean
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
-              <div className="overflow-hidden rounded-xl border bg-black">
+              <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950">
                 <Stage
                   canvasRef={canvasRef}
                   style={style}

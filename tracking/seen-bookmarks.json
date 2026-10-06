@@ -243,7 +243,8 @@
       "repo": "https://github.com/alchaincyf/huashu-art-motion",
       "slug": "art-motion-lab",
       "date": "2026-10-07",
-      "builtDate": "2026-10-07"
+      "builtDate": "2026-10-07",
+      "pr": "https://github.com/larryfang/tech-demos/pull/12"
     }
   ]
 }

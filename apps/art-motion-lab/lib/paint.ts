@@ -112,50 +112,56 @@ function paintCave(input: PaintInput) {
 
 function paintMonet(input: PaintInput) {
   const { ctx, width, height, time, intensity } = input;
-  fillBackground(ctx, width, height, "#c9d8e8", "#7fa38a");
+  fillBackground(ctx, width, height, "#8eb4d4", "#d7c3a4");
 
-  const water = ctx.createLinearGradient(0, height * 0.42, 0, height);
-  water.addColorStop(0, "#9ec3c8");
-  water.addColorStop(1, "#3f6d6a");
+  const canopy = ctx.createLinearGradient(0, 0, 0, height * 0.42);
+  canopy.addColorStop(0, "#6f9c6a");
+  canopy.addColorStop(1, "rgba(111, 156, 106, 0)");
+  ctx.fillStyle = canopy;
+  ctx.fillRect(0, 0, width, height * 0.42);
+
+  const water = ctx.createLinearGradient(0, height * 0.36, 0, height);
+  water.addColorStop(0, "#6aa8b4");
+  water.addColorStop(0.55, "#3f7f78");
+  water.addColorStop(1, "#24524d");
   ctx.fillStyle = water;
-  ctx.fillRect(0, height * 0.4, width, height * 0.6);
+  ctx.fillRect(0, height * 0.36, width, height * 0.64);
 
-  ctx.strokeStyle = "rgba(90, 70, 90, 0.55)";
-  ctx.lineWidth = 10;
-  ctx.beginPath();
-  ctx.moveTo(width * 0.18, height * 0.58);
-  ctx.quadraticCurveTo(width * 0.5, height * 0.22, width * 0.84, height * 0.56);
-  ctx.stroke();
-  ctx.lineWidth = 6;
-  for (let i = 0; i < 6; i += 1) {
-    const x = width * (0.26 + i * 0.1);
+  for (let i = 0; i < 140; i += 1) {
+    const x = hash(i) * width + Math.sin(time * 0.9 + i) * 14 * intensity;
+    const y = height * 0.38 + hash(i + 4) * height * 0.58;
+    const hue = 165 + hash(i + 9) * 95;
+    ctx.fillStyle = `hsla(${hue}, 48%, ${48 + hash(i + 2) * 22}%, 0.72)`;
     ctx.beginPath();
-    ctx.moveTo(x, height * 0.56);
-    ctx.lineTo(x, height * 0.38 - (i % 2) * 12);
+    ctx.ellipse(x, y, 14 + hash(i + 1) * 18, 6, hash(i) * 2, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.strokeStyle = "rgba(72, 48, 62, 0.85)";
+  ctx.lineWidth = 16;
+  ctx.beginPath();
+  ctx.moveTo(width * 0.12, height * 0.6);
+  ctx.quadraticCurveTo(width * 0.5, height * 0.16, width * 0.9, height * 0.58);
+  ctx.stroke();
+  ctx.lineWidth = 8;
+  for (let i = 0; i < 7; i += 1) {
+    const x = width * (0.22 + i * 0.09);
+    ctx.beginPath();
+    ctx.moveTo(x, height * 0.58);
+    ctx.lineTo(x, height * 0.34 - (i % 2) * 16);
     ctx.stroke();
   }
 
-  for (let i = 0; i < 90; i += 1) {
-    const x =
-      hash(i) * width + Math.sin(time * 0.8 + i) * 10 * intensity;
-    const y = height * 0.48 + hash(i + 4) * height * 0.46;
-    const hue = 200 + hash(i + 9) * 80;
-    ctx.fillStyle = `hsla(${hue}, 42%, ${60 + hash(i + 2) * 20}%, 0.55)`;
+  for (let i = 0; i < 14; i += 1) {
+    const x = width * (0.1 + i * 0.06) + Math.sin(time * 0.7 + i) * 18 * intensity;
+    const y = height * (0.58 + (i % 3) * 0.09);
+    ctx.fillStyle = "rgba(46, 102, 62, 0.92)";
     ctx.beginPath();
-    ctx.ellipse(x, y, 10 + hash(i + 1) * 14, 5, hash(i) * 2, 0, Math.PI * 2);
+    ctx.ellipse(x, y, 34, 12, 0.08, 0, Math.PI * 2);
     ctx.fill();
-  }
-
-  for (let i = 0; i < 10; i += 1) {
-    const x = width * (0.12 + i * 0.08) + Math.sin(time * 0.6 + i) * 16 * intensity;
-    const y = height * (0.62 + (i % 3) * 0.08);
-    ctx.fillStyle = "rgba(70, 120, 80, 0.75)";
+    ctx.fillStyle = `hsla(${310 + i * 6}, 58%, 70%, 0.95)`;
     ctx.beginPath();
-    ctx.ellipse(x, y, 28, 10, 0.1, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.fillStyle = `hsla(${300 + i * 8}, 50%, 72%, 0.9)`;
-    ctx.beginPath();
-    ctx.arc(x + 4, y - 4, 5, 0, Math.PI * 2);
+    ctx.arc(x + 6, y - 5, 7, 0, Math.PI * 2);
     ctx.fill();
   }
 }
