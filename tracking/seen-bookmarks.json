@@ -123,6 +123,15 @@
       "slug": "qiaomu-reader",
       "date": "2026-10-05",
       "status": "built"
+    },
+    {
+      "id": "2107500970100011337",
+      "title": "huashu-art-motion",
+      "url": "https://x.com/AlchainHust/status/2107500970100011337",
+      "repo": "https://github.com/alchaincyf/huashu-art-motion",
+      "slug": "art-motion-lab",
+      "date": "2026-10-07",
+      "status": "built"
     }
   ],
   "built": [
@@ -226,6 +235,16 @@
       "date": "2026-10-05",
       "builtDate": "2026-10-05",
       "pr": "https://github.com/larryfang/tech-demos/pull/11"
+    },
+    {
+      "id": "2107500970100011337",
+      "title": "huashu-art-motion",
+      "url": "https://x.com/AlchainHust/status/2107500970100011337",
+      "repo": "https://github.com/alchaincyf/huashu-art-motion",
+      "slug": "art-motion-lab",
+      "date": "2026-10-07",
+      "builtDate": "2026-10-07",
+      "pr": "https://github.com/larryfang/tech-demos/pull/12"
     }
   ]
 }
