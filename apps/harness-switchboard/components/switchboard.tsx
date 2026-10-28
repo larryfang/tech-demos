@@ -213,11 +213,13 @@ export function Switchboard({ liveAvailable: initialLive }: { liveAvailable: boo
                     onClick={() => toggleHarness(harness.id)}
                     className={
                       on
-                        ? "rounded-lg border border-foreground/20 bg-primary/5 px-3 py-2 text-left"
-                        : "rounded-lg border border-border px-3 py-2 text-left text-muted-foreground"
+                        ? "rounded-lg border border-foreground/40 bg-foreground text-background px-3 py-2 text-left"
+                        : "rounded-lg border border-border bg-background px-3 py-2 text-left text-muted-foreground hover:bg-muted/50"
                     }
                   >
-                    <p className="text-sm font-medium text-foreground">{harness.name}</p>
+                    <p className={`text-sm font-medium ${on ? "text-background" : "text-foreground"}`}>
+                      {harness.name}
+                    </p>
                     <p className="mt-0.5 text-xs">{harness.blurb}</p>
                   </button>
                 );
@@ -266,7 +268,7 @@ export function Switchboard({ liveAvailable: initialLive }: { liveAvailable: boo
         </section>
       ) : null}
 
-      {finished ? <ResultsPanel lanes={lanes} /> : null}
+      {finished ? <ResultsPanel key={runId ?? "results"} lanes={lanes} /> : null}
     </div>
   );
 }

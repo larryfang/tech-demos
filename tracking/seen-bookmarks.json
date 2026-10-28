@@ -262,7 +262,8 @@
       "repo": "https://github.com/HarnessRouter/harnessrouter",
       "slug": "harness-switchboard",
       "date": "2026-10-28",
-      "builtDate": "2026-10-28"
+      "builtDate": "2026-10-28",
+      "pr": "https://github.com/larryfang/tech-demos/pull/13"
     }
   ]
 }
