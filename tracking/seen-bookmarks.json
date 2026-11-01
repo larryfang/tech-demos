@@ -132,6 +132,15 @@
       "slug": "art-motion-lab",
       "date": "2026-10-07",
       "status": "built"
+    },
+    {
+      "id": "2113954302901256597",
+      "title": "HarnessRouter",
+      "url": "https://x.com/_avichawla/status/2113954302901256597",
+      "repo": "https://github.com/HarnessRouter/harnessrouter",
+      "slug": "harness-switchboard",
+      "date": "2026-10-28",
+      "status": "built"
     }
   ],
   "built": [
@@ -245,6 +254,16 @@
       "date": "2026-10-07",
       "builtDate": "2026-10-07",
       "pr": "https://github.com/larryfang/tech-demos/pull/12"
+    },
+    {
+      "id": "2113954302901256597",
+      "title": "HarnessRouter",
+      "url": "https://x.com/_avichawla/status/2113954302901256597",
+      "repo": "https://github.com/HarnessRouter/harnessrouter",
+      "slug": "harness-switchboard",
+      "date": "2026-10-28",
+      "builtDate": "2026-10-28",
+      "pr": "https://github.com/larryfang/tech-demos/pull/13"
     }
   ]
 }
