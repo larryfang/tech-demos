@@ -141,6 +141,15 @@
       "slug": "harness-switchboard",
       "date": "2026-10-28",
       "status": "built"
+    },
+    {
+      "id": "202611020003",
+      "title": "Sinch Voice IVR Studio",
+      "url": "https://developers.sinch.com/docs/voice/",
+      "repo": "https://github.com/sinch/sinch-sdk-javascript",
+      "slug": "voice-ivr-studio",
+      "date": "2026-11-02",
+      "status": "built"
     }
   ],
   "built": [
@@ -264,6 +273,16 @@
       "date": "2026-10-28",
       "builtDate": "2026-10-28",
       "pr": "https://github.com/larryfang/tech-demos/pull/13"
+    },
+    {
+      "id": "202611020003",
+      "title": "Sinch Voice IVR Studio",
+      "url": "https://developers.sinch.com/docs/voice/",
+      "repo": "https://github.com/sinch/sinch-sdk-javascript",
+      "slug": "voice-ivr-studio",
+      "date": "2026-11-02",
+      "builtDate": "2026-11-02",
+      "pr": "https://github.com/larryfang/tech-demos/pull/24"
     }
   ]
 }
