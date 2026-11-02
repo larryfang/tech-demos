@@ -141,6 +141,15 @@
       "slug": "harness-switchboard",
       "date": "2026-10-28",
       "status": "built"
+    },
+    {
+      "id": "202611020011",
+      "title": "Sinch MessageMedia SMS Console",
+      "url": "https://messagemedia.github.io/documentation/",
+      "repo": "https://github.com/messagemedia",
+      "slug": "messagemedia-console",
+      "date": "2026-11-02",
+      "status": "built"
     }
   ],
   "built": [
