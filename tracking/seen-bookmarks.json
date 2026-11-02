@@ -141,6 +141,15 @@
       "slug": "harness-switchboard",
       "date": "2026-10-28",
       "status": "built"
+    },
+    {
+      "id": "202611020001",
+      "title": "Sinch SMS Campaign Console",
+      "url": "https://developers.sinch.com/docs/sms/",
+      "repo": "https://github.com/sinch/sinch-sdk-javascript",
+      "slug": "sms-blast-console",
+      "date": "2026-11-02",
+      "status": "built"
     }
   ],
   "built": [
@@ -264,6 +273,16 @@
       "date": "2026-10-28",
       "builtDate": "2026-10-28",
       "pr": "https://github.com/larryfang/tech-demos/pull/13"
+    },
+    {
+      "id": "202611020001",
+      "title": "Sinch SMS Campaign Console",
+      "url": "https://developers.sinch.com/docs/sms/",
+      "repo": "https://github.com/sinch/sinch-sdk-javascript",
+      "slug": "sms-blast-console",
+      "date": "2026-11-02",
+      "builtDate": "2026-11-02",
+      "pr": "https://github.com/larryfang/tech-demos/pull/19"
     }
   ]
 }
