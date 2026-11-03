@@ -159,6 +159,15 @@
       "slug": "handraw-style-lab",
       "date": "2026-11-02",
       "status": "built"
+    },
+    {
+      "id": "2117661532654051787",
+      "title": "OpenBot",
+      "url": "https://x.com/Pluvio9yte/status/2117661532654051787",
+      "repo": "https://github.com/nightly-labs/openbot",
+      "slug": "openbot-team-room",
+      "date": "2026-11-03",
+      "status": "built"
     }
   ],
   "built": [
@@ -302,6 +311,15 @@
       "date": "2026-11-02",
       "builtDate": "2026-11-02",
       "pr": "https://github.com/larryfang/tech-demos/pull/14"
+    },
+    {
+      "id": "2117661532654051787",
+      "title": "OpenBot",
+      "url": "https://x.com/Pluvio9yte/status/2117661532654051787",
+      "repo": "https://github.com/nightly-labs/openbot",
+      "slug": "openbot-team-room",
+      "date": "2026-11-03",
+      "builtDate": "2026-11-03"
     }
   ]
 }
