@@ -281,7 +281,8 @@
       "repo": "https://github.com/nightly-labs/openbot",
       "slug": "openbot-team-room",
       "date": "2026-11-03",
-      "builtDate": "2026-11-03"
+      "builtDate": "2026-11-03",
+      "pr": "https://github.com/larryfang/tech-demos/pull/26"
     }
   ]
 }
