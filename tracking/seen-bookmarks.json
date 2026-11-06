@@ -281,7 +281,8 @@
       "repo": "https://github.com/wquguru/cicada",
       "slug": "cicada-meeting-room",
       "date": "2026-11-06",
-      "builtDate": "2026-11-06"
+      "builtDate": "2026-11-06",
+      "pr": "https://github.com/larryfang/tech-demos/pull/27"
     }
   ]
 }
