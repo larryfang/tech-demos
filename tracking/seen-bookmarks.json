@@ -141,6 +141,15 @@
       "slug": "harness-switchboard",
       "date": "2026-10-28",
       "status": "built"
+    },
+    {
+      "id": "2118052017755005210",
+      "title": "Cicada",
+      "url": "https://x.com/dotey/status/2118052017755005210",
+      "repo": "https://github.com/wquguru/cicada",
+      "slug": "cicada-meeting-room",
+      "date": "2026-11-06",
+      "status": "built"
     }
   ],
   "built": [
@@ -264,6 +273,16 @@
       "date": "2026-10-28",
       "builtDate": "2026-10-28",
       "pr": "https://github.com/larryfang/tech-demos/pull/13"
+    },
+    {
+      "id": "2118052017755005210",
+      "title": "Cicada",
+      "url": "https://x.com/dotey/status/2118052017755005210",
+      "repo": "https://github.com/wquguru/cicada",
+      "slug": "cicada-meeting-room",
+      "date": "2026-11-06",
+      "builtDate": "2026-11-06",
+      "pr": "https://github.com/larryfang/tech-demos/pull/27"
     }
   ]
 }
