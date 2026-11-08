@@ -300,7 +300,8 @@
       "repo": "https://github.com/vercel-labs/agent-desktop",
       "slug": "desktop-ref-lab",
       "date": "2026-11-09",
-      "builtDate": "2026-11-08"
+      "builtDate": "2026-11-08",
+      "pr": "https://github.com/larryfang/tech-demos/pull/28"
     }
   ]
 }
