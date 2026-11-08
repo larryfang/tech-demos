@@ -150,6 +150,15 @@
       "slug": "cicada-meeting-room",
       "date": "2026-11-06",
       "status": "built"
+    },
+    {
+      "id": "2119080693233754506",
+      "title": "agent-desktop",
+      "url": "https://x.com/Pluvio9yte/status/2119080693233754506",
+      "repo": "https://github.com/vercel-labs/agent-desktop",
+      "slug": "desktop-ref-lab",
+      "date": "2026-11-09",
+      "status": "built"
     }
   ],
   "built": [
@@ -283,6 +292,16 @@
       "date": "2026-11-06",
       "builtDate": "2026-11-06",
       "pr": "https://github.com/larryfang/tech-demos/pull/27"
+    },
+    {
+      "id": "2119080693233754506",
+      "title": "agent-desktop",
+      "url": "https://x.com/Pluvio9yte/status/2119080693233754506",
+      "repo": "https://github.com/vercel-labs/agent-desktop",
+      "slug": "desktop-ref-lab",
+      "date": "2026-11-09",
+      "builtDate": "2026-11-08",
+      "pr": "https://github.com/larryfang/tech-demos/pull/28"
     }
   ]
 }
