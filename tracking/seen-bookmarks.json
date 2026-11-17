@@ -159,6 +159,24 @@
       "slug": "handraw-style-lab",
       "date": "2026-11-02",
       "status": "built"
+    },
+    {
+      "id": "2120183671923912774",
+      "title": "ByteAsk CLI",
+      "url": "https://x.com/4n1rudh4/status/2120183671923912774",
+      "repo": "https://github.com/ByteAsk/cli",
+      "slug": "byteask-cli",
+      "date": "2026-11-11",
+      "status": "skipped"
+    },
+    {
+      "id": "2122633782654370068",
+      "title": "OpenMotion",
+      "url": "https://x.com/tuturetom/status/2122633782654370068",
+      "repo": "https://github.com/nexu-io/openmotion",
+      "slug": "openmotion-remix-lab",
+      "date": "2026-11-18",
+      "status": "built"
     }
   ],
   "built": [
@@ -302,6 +320,16 @@
       "date": "2026-11-02",
       "builtDate": "2026-11-02",
       "pr": "https://github.com/larryfang/tech-demos/pull/14"
+    },
+    {
+      "id": "2122633782654370068",
+      "title": "OpenMotion",
+      "url": "https://x.com/tuturetom/status/2122633782654370068",
+      "repo": "https://github.com/nexu-io/openmotion",
+      "slug": "openmotion-remix-lab",
+      "date": "2026-11-18",
+      "builtDate": "2026-11-17",
+      "pr": "https://github.com/larryfang/tech-demos/pull/29"
     }
   ]
 }
